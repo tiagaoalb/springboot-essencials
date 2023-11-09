@@ -6,5 +6,9 @@ import java.util.List;
 
 public interface AnimeRepository {
     List<Anime> listAll();
-    List<Anime> findById();
+    Anime findById();
+
+    Anime save();
+
+    Void delete();
 }
