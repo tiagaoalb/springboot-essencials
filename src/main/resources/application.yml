@@ -1,3 +1,14 @@
 server:
   error:
     include-stacktrace: on_param
+
+spring:
+  data-source:
+    url: jdbc:mysql://localhost:3306/anime?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQLDialect
+      ddl-auto: update
